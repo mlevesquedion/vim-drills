@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-VIM EXERCICES - General tips and tricks
+General tips and tricks
 - Use  .  to repeat the last command
 
 
@@ -26,13 +26,14 @@ Instructions: Follow the line around the screen using h, j, k and l.
                           \_____________/                                     
                                                                               
                                                                               
-                                                                              
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lession 1.3: Text editing - deletion
-Instructions: Correct the lines of text below by deleting the
-unneccesary characters with  x . Hint: use 0 to return to the left.
-
-** Also note that  X  will delete one character back.
+Lesson 1.3: Text editing - deletion
+Instructions: Correct the lines of text below by deleting the unnecessary characters. 
+Commands:
+- x : delete one character to the right
+- X : delete one character to the left
+- f<character> : jump to the next occurrence of <character>
+- F<character> : jump to the previous occurrence of <character>
 
 Faar ouxt inn trhe unchttarteed bakckwataers oof the unfashionable end of the 
 Weeestern sSpiral arrm ohf thze Gallaxy lies ae sm*all unregarded yellow syun.
