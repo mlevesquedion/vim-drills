@@ -57,9 +57,10 @@ Where7 ciiviil blo*od mak^es civil h=ands uncclean.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 1.4: Text editing - insertion
-Make the pairs of lines match up by inserting the missing text.
-Hint: if you're having trouble with the escape key, try Ctrl-[ instead.
-
+Instructions: make the pairs of lines match up by inserting the missing text.
+Commands:
+- i : insert text at cursor
+- a : insert text after cursor
 
 Oliver w the vim of matic course of trea decep.
 Oliver was the victim of a systematic course of treachery and deception.
