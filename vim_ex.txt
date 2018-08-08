@@ -174,9 +174,8 @@ But what shall we do for a ring?" The eternal question.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 2.4: Using a count for a motion
-
-Try to move from the point marked 'a' to the point marked 'b' using 
-one command (e.g. 3e or 2w).
+Instructions: Try to move from the point marked 'a' to the point marked 'b' using 
+one command.
 
        a           b
 e stands for the end of the word.
