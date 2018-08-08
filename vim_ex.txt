@@ -130,6 +130,8 @@ Instructions: delete the words that are out of place.
 Commands:
 - w : move forward 1 word
 - dw : delete 1 word
+- e : move to the end of the word
+- de : delete to the end of the word
 
 The rabbit-hole VIM went straight on like a IS tunnel for some way, and 
 then GOOD dipped suddenly down, IT so suddenly that Alice had not a moment 
