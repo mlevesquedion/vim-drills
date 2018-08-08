@@ -104,7 +104,9 @@ I laughed incredulously as Sherlock Holmes leaned back in his settee
 
 
 Lesson 1.5.extra : Text editing - prepending
-Use I to prepend missing text
+Instructions: complete the lines by filling in the beginning of the sentence.
+Commands :
+- I : insert at beginning of line.
 
 afraid, my dear Watson, that most of your conclusions were erroneous.
 "I am afraid, my dear Watson, that most of your conclusions were erroneous.
