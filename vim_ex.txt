@@ -83,9 +83,9 @@ Here the position of affairs had not at all improved.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 1.5: Text editing - appending
-Complete the lines by filling in the missing word, then pressing A 
-to append to the line. Remember, return the cursor to the left with 0.
-
+Instructions: complete the lines by filling in the missing word, then the end of the sentence. 
+Commands:
+- A : append at end of line.
 
 "I am afraid, my dear , that most of your conclusions we
 "I am afraid, my dear Watson, that most of your conclusions were erroneous.
