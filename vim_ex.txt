@@ -126,9 +126,9 @@ heard it distinctly, and I am sure that it was really the sob of a woman."
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 2.1: Deletion commands
-Move the cursor to the first letter of the word to be deleted, then press
-dw to delete the entire word. Rinse and repeat.
-
+Instructions: delete the words that are out of place.
+Commands:
+- dw : delete 1 word
 
 The rabbit-hole VIM went straight on like a IS tunnel for some way, and 
 then GOOD dipped suddenly down, IT so suddenly that Alice had not a moment 
