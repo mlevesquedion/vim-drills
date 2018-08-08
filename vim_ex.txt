@@ -385,7 +385,9 @@ Cats are similar in anatomy to the other felids, with a strong flexible body, qu
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 4.3: Matching parentheses search
-Ctrl + % : go to matching character
+Instructions: fix up the following lines/blocks of code.
+Commands:
+- Ctrl + % : go to matching character (e.g., brackets, parentheses...)
 
 (defn find-first
   "Finds the first item in a collection that matches a predicate."
