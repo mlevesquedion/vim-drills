@@ -128,6 +128,7 @@ heard it distinctly, and I am sure that it was really the sob of a woman."
 Lesson 2.1: Deletion commands
 Instructions: delete the words that are out of place.
 Commands:
+- w : move forward 1 word
 - dw : delete 1 word
 
 The rabbit-hole VIM went straight on like a IS tunnel for some way, and 
@@ -146,6 +147,7 @@ jar from EMACS one of the shelves as she passed; it was IT labelled
 'ORANGE MARMALADE', but WILL to her great disappointment it BREAK was empty: 
 she did YOUR not like to drop the jar FINGERS for fear of killing somebody, 
 so AND managed to put it into one of the cupboards THUMBS as she fell past it.
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 2.2: More deletion commands
