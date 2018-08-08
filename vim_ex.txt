@@ -193,7 +193,6 @@ a                                b              c
 Zero One Two Three Four Five Six Seven Eight Nine Ten
 
 
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 2.5: Using a count to delete more
 Instructions: delete the uppercase words.
@@ -216,6 +215,7 @@ Bringing DETERMINED FOR their tails TO FIND THEM behind them.
 Little Bo SHE FOUND THEM INDEED peep 
 fell fast BUT IT MADE HER HEART BLEED asleep
 And FOR THEY LEFT dreamt she THEIR TAILS BEHIND THEM heard them bleating,
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 2.6: Operating on lines
