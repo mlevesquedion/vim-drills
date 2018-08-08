@@ -198,6 +198,7 @@ Lesson 2.5: Using a count to delete more
 Instructions: delete the uppercase words.
 Commands:
 - d<number>w : delete <number> words
+- Alternatively, use <number>dw to achieve the same effect.
 
 Jack and Jill UP GOT JACK went up AND HOME DID TROT the Hill 
 to fetch AS FAST AS HE COULD a pail of CAPER water
