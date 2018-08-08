@@ -244,9 +244,11 @@ Fluttering and dancing in the breeze.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 2.7: The undo command
-Fix the errors below. Undo the corrections one-by-one with u, then try 
-redoing them with CTRL-R. Also, try out undoing a whole line with U.
-
+Instructions: fix the errors below, and practice undoing your corrections.
+Commands:
+- u : undo last change
+- U : undo all recent changes on current line (note that this actually counts as a change)
+- Ctrl + R : redo 
 
 There    on**ce was a bu()gg$$y AI
 Who d%*ecided ^^^ her su""bject & should d+ie.
@@ -265,13 +267,13 @@ whose #limericks# {stopped} on %%line%% two.
 
 [Thanks to http://limerickdb.com/]
 
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 3.1: The put command
 Reorder Langston Hughes using dd and p.
 
 3 Life is a broken-winged bird
 6 For when dreams go
-1 Hold fast to dreams
 8 Frozen with snow. 
 5 Hold fast to dreams
 2 For if dreams die
