@@ -247,7 +247,7 @@ Lesson 2.7: The undo command
 Instructions: fix the errors below, and practice undoing your corrections.
 Commands:
 - u : undo last change
-- U : undo all recent changes on current line (note that this actually counts as a change)
+- U : undo all recent changes on current line (note that this counts as a change)
 - Ctrl + R : redo 
 
 There    on**ce was a bu()gg$$y AI
@@ -266,7 +266,6 @@ There ~once~ was (a) gal "from" [Peru]
 whose #limericks# {stopped} on %%line%% two.
 
 [Thanks to http://limerickdb.com/]
-
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 3.1: The put command
@@ -356,10 +355,12 @@ The guilty think all talk is of themselves.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 4.1: Cursor location and file status
-Ctrl-g : show location in file
-G : move to bottom of file
-gg : move to top of file
-<number> G : move to a specific line
+Instructions: try out the following commands.
+Commands:
+- Ctrl-g : show location in file
+- G : move to bottom of file
+- gg : move to top of file
+- <number> G : move to a specific line
 
 Memorize the current line number, then move to the beginning of the file.
 Now move to line 200, and come back here.
