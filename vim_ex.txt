@@ -151,10 +151,9 @@ so AND managed to put it into one of the cupboards THUMBS as she fell past it.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lesson 2.2: More deletion commands
-Place the cursor on the first incorrect character of each line 
-and press d$ to delete to the end of the line.
-
-
+Instructions: delete the extraneous characters on the right side of the line. 
+Commands:
+- d$ : delete to the end of the line
 
 The Owl and the Pussycat went to sea[this is a bit that you need to delete]
 In a beautiful pea-green boat,IT WASN'T MADE OF PEAS
@@ -169,7 +168,6 @@ Pussy said to the Owl "You elegant fowl, http://flic.kr/p/6chRZS
 How charmingly sweet you sing. @@Funfact - owls have the sweetest birdsong
 O let us be married, too long we have tarried; A little TOO much tarrying
 But what shall we do for a ring?" The eternal question.
-
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
