@@ -5,23 +5,23 @@ __     ___                     ____       _ _ _
    \_/  |_|_| |_| |_|         |____/|_|  |_|_|_|___/
 
 Run through these drills five times and you will become comfortable enough
-with Vim to use it in your daily editing purposes.
+with Vim to use it for your daily editing purposes.
 
 TO EXIT : hit <ESC> a bunch of times, then type "q!" and hit <ENTER>.
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 0 - GENERAL TIPS AND TRICKS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Use  .  to repeat the last command
-- Use  u  to undo the last change
-- Use  <ESC>  or  <C-[>  to leave editing mode 
-- <C-[> is the same as "Ctrl + ["
+- Use  u  to undo the last change and U to undo all recent changes to a line
+- Use <C-r> to redo the last undone change
+- Use  <ESC>  or  <C-[>  to leave editing mode
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1 - MOVING THE CURSOR
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Starting at the star, follow the line to reach the cat
 
 - h : move one character to the left
@@ -32,412 +32,224 @@ Starting at the star, follow the line to reach the cat
 *
 |             
 |       .-------.   
-|       |       |                                                             
-\_______/       |                                                             
-                |                                                             
-                |                                                             
-                \____.                                                        
-                     |    .-----------------.                                 
-                     |    |                 |                                 
-           .---------+----+----.            |                                 
-           \_________/    |    |            |                                 
-                          |    |            |                                 
-                          |    |            |                                 
+|       |       |                                                          
+\_______/       |                                                         
+                |                                                         
+                |                                                         
+                \____.                                                    
+                     |    .-----------------.                             
+                     |    |                 |                             
+           .---------+----+----.            |                             
+           \_________/    |    |            |                             
+                          |    |            |                             
+                          |    |            |                             
                           |    \________.   \________ /\_/\  
                           |             |            ( o.o )
-                          |             |             > ^ <                
-                          |             |                                     
-                          \_____________/                                     
+                          |             |             > ^ < 
+                          |             |                                  
+                          \_____________/                                  
+                                                                           
+                                                                           
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 - MOVING ACROSS WORDS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Remove the uppercased words from the text.
 
+- w : move one word forward
+- b : move one word backward
+- e : move to the end of a word
+- d<motion> : delete <motion> (e.g. dw = delete word)
+- W : same as w, skipping punctuation (and so on with b and e)
 
-2 - DELETING WORDS
-                                                                              
-                                                                              
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 1.3: Text editing - deletion
-Instructions: Correct the lines of text below by deleting the unnecessary characters. 
-Commands:
-- x : delete one character to the right
-- X : delete one character to the left
+Being told of THE cat-and-dog FIGHT about to occur in the BLUE pencil CLUB—a
+new thing for your CIRCLE, perhaps, though not unfamiliar to AMATEURDOM as a
+whole—I cannot RESIST contributing a few Thomasic YOWLS and SIBILANTS upon 
+my side of the DISPUTE, though conscious that the WORD of a venerable ex-
+member can scarcely have much WEIGHT against the BRILLIANCY of such still 
+active ADHERENTS as may BARK upon the other side.
+
+- <count><motion> : do <motion> <count> times (e.g. 2w = forward 2 words)
+- d<count><motion> or <count>d<motion> : delete instead of moving 
+
+Aware of MY INEPTITUDE AT ARGUMENT, my valued correspondent Curator JAMES
+FERDINAND MORTON OF PATERSON has sent me THE RECORDS of a similar
+controversy in THE NEW YORK TRIBUNE, in which Mr. Carl Van Doren is on MY
+SIDE and Mr. Albert Payson Terhune on that of THE CANINE TRIBE.
+
+From this I WOULD BE GLAD to plagiarise such data AS I NEED; but Mr. Morton,
+WITH GENUINELY MACHIAVELLIAN SUBTLETY, has furnished me with only a part of
+the FELINE section whilst submitting the DOGGISH brief in full. No doubt he
+imagines that THIS ARRANGEMENT, in view of MY OWN EMPHATIC BIAS, makes for
+something like ultimate fairness; but for me it is EXCEEDINGLY INCONVENIENT,
+since it will FORCE me to be MORE OR LESS ORIGINAL in several parts of the
+ensuing remarks.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 - DELETING CHARACTERS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Remove the uppercased characters from the text.
+
+- x : delete the character under the cursor
+- X : delete the character before the cursor
 - f<character> : jump to the next occurrence of <character>
 - F<character> : jump to the previous occurrence of <character>
+- Use what you learned in the previous lesson it the opportunity arises
+
+BetwEEn dOgs and cAts my degree of chOiCe is SO grEAT thAT It would nEvEr
+oCcur tO mE tO coMparE the twO. I hAve no actIve dIsliKe FOR dogs, anY morE
+than I hAve for mONkeys, humAN beINGs, CoWs, sHEep, Or pTeRoDaCtYlS; bUt fo
+The Cat I hAve ENTERtained A parTIcuLAr rESpEct aNd aFfEcTiOn EveR sIncE tHe
+earliesT dayS oF mY InFaNcY. In iTs fLAWLESS gRACE and sUPerior sELF-
+sUffiCIENCy I haVe sEEn A symbOl Of the perFECT bEautY And blAnd
+impersonAlity of thE univErsE itsElf, objEctivEly considErEd; And in its Air
+SiLeNt MyStErY there resides fOr mE aLL The Wonder anD fascinatioN Of The
+UNKNOWN. 
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 - INSERTING TEXT 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Insert the text missing from the lines (the missing text is in uppercase in the reference line).
+
+- i : switch to INSERT MODE at the current cursor location
+- a : switch to INSERT MODE at the character following the current location
+- <C-h> : delete one character back (while in insert mode)
+- <C-w> : delete one word back (while in insert mode)
+- <ESC> or <C-[> : exit INSERT MODE (go back to NORMAL MODE)
+
+The DOG appeals tO cHEAP and Facile eMOTIONs; THE CAT to The
+he appeals t c and acile es; to he
+
+DEEpest foUntS OF imagiNATION aUd cOSMIC pErcEptIOn IN THE HUman MiND.
+pest font imagi ad c prcptn man i.
+
+It Is nO acciDENT tHAT tHE conTEMPLative Egyptians, TOGETher WITH SUCH lateR
+t s n acci t t conative gyptians her late 
+
+POEtic sPIRIts as Poe, Gautier, Baudelaire, and Swinburne, weRE aLL SINcere
+tic sts as oe, autier, audelaire, and winburne, we a cere
+
+worSHIPpers oF thE SuPPlE GRIMALKIN.
+worpers o th ul .
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5 - WORKING WITH LINES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Delete the uppercased lines.
+
+- dd : delete an entire line
+- cc : delete a line and enter insert mode
+- yy : "yank" (copy) an entire line
+- p : paste the last thing deleted or copied (be it a line, word, or other)
+
+NATURALLY, ONE’S PREFERENCE IN THE MATTER OF CATS AND DOGS DEPENDS WHOLLY
+upon one’s temperament and point of view. The dog would appear to me to be
+THE FAVOURITE OF SUPERFICIAL, SENTIMENTAL, EMOTIONAL, AND DEMOCRATIC PEOPLE—
+PEOPLE WHO FEEL RATHER THAN THINK, WHO ATTACH IMPORTANCE TO MANKIND AND THE
+popular conventional emotions of the simple, and who find their greatest
+CONSOLATION IN THE FAWNING AND DEPENDENT ATTACHMENTS OF A GREGARIOUS
+SOCIETY. SUCH PEOPLE LIVE IN A LIMITED WORLD OF IMAGINATION; ACCEPTING
+UNCRITICALLY THE VALUES OF COMMON FOLKLORE, AND ALWAYS PREFERRING TO HAVE
+their naive beliefs, feelings, and prejudices tickled, rather than to enjoy
+A PURELY AESTHETIC AND PHILOSOPHIC PLEASURE ARISING FROM DISCRIMINATION,
+CONTEMPLATION, AND THE RECOGNITION OF AUSTERE ABSOLUTE BEAUTY. THIS IS NOT
+to say that the cheaper emotions do not also reside in the average
+CAT-LOVER’S LOVE OF CATS, BUT MERELY TO POINT OUT THAT IN AILUROPHILY THERE
+EXISTS A BASIS OF TRUE AESTHETICISM WHICH KYNOPHILY DOES NOT POSSESS. THE
+real lover of cats is one who demands a clearer adjustment to the universe
+THAN ORDINARY HOUSEHOLD PLATITUDES PROVIDE; ONE WHO REFUSES TO SWALLOW THE
+sentimental notion that all good people love dogs, children, and horses
+while all bad people dislike and are disliked by such. He is unwilling to
+set up himself and his cruder feelings as a measure of universal values,
+OR TO ALLOW SHALLOW ETHICAL NOTIONS TO WARP HIS JUDGMENT. IN A WORD, HE HAD
+rather admire and respect than effuse and dote; and does not fall into the
+fallacy that pointless sociability and friendliness, or slavering devotion
+AND OBEDIENCE, CONSTITUTE ANYTHING INTRINSICALLY ADMIRABLE OR EXALTED.
+Dog-lovers base their whole case on these commonplace, servile, and
+plebeian qualities, and amusingly judge the intelligence of a pet by its
+DEGREE OF CONFORMITY TO THEIR OWN WISHES. CATLOVERS ESCAPE THIS DELUSION,
+REPUDIATE THE IDEA THAT CRINGING SUBSERVIENCE AND SIDLING COMPANIONSHIP TO
+man are supreme merits, and stand free to worship aristocratic independence,
+self-respect, and individual personality joined to extreme grace and beauty
+as typified by the cool, lithe, cynical, and unconquered lord of the
+HOUSETOPS.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+6 - MORE INSERTION
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Insert the missing text at the start or end of the lines.
+
+- A : enter INSERT MODE at the end of the line
+- I : enter INSERT MODE at the beginning of the line
+- 0 : move to the beginning of the line
+- $ : move to the end of the line
+
+But amidst this chaos of intellectual and emotional GROVELLING A FEW FREE
+But amidst this chaos of intellectual and emotional
+
+SOULS HAVE ALWAYS stood out for the old civilised realities which
+stood out for the old civilised realities which
+
+MEDIAEVALISM ECLIPSED—the stern classic loyalty TO TRUTH, STRENGTH, AND
+—the stern classic loyalty
 
-Faar ouxt inn trhe unchttarteed bakckwataers oof the unfashionable end of the 
-Weeestern sSpiral arrm ohf thze Gallaxy lies ae sm*all unregarded yellow syun.
+beauty given by a clear mind and uncowed spirit to tHE FULL-LIVING WESTERN
+beauty given by a clear mind and uncowed spirit to t
 
-Iti ijs aaa trufth universalllly acknowledgegeged, that a sxingle manr iin 
-possessibon of aw gopod fort^une muost bee in wantxxx of a) wife.&&
+THE VIRILE aesthetic and ethic of the extensor muscles—THE BOLD, BUOYANT,
+aesthetic and ethic of the extensor muscles—
 
-Int waes lourvve at first sighght.. The feeirst time Yossarian sa9w th$e 
-chaplain heee fell maaadly in lov*ve with himmmm. 
+ASSERTIVE BELIEFS And preferences of proud, dominant, unbroken,
+nd preferences of proud, dominant, unbroken,
 
-Aaas Gregor Samsa awokke onne moorning frrom uneeasy ddreams hhe founnd 
-himmself trransformed inn hiis bbed intoo a giiigantic insecct.
+and cringer and SENTIMENTALIST.
+and cringer and
 
-It was  a bright cold day in  April, and the clocks  were striking   thirteen.
 
-Twwo householllds, bothe alikee inf dignityyyy,
-IIIn fair% Verrrrona, whereq wiie lay# ou987r sc"ene,
-Frrom ++ancient grudddge brrrreak tto #new mutiny,,,
-Where7 ciiviil blo*od mak^es civil h=ands uncclean.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7 - SEARCHING
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Delete the uppercased words.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 1.4: Text editing - insertion
-Instructions: make the pairs of lines match up by inserting the missing text.
-Commands:
-- i : insert text at cursor
-- a : insert text after cursor
+- / : search for a phrase
+- ? : search backwards
+- n : go to next match
+- N : go to previous match
 
-Oliver w the vim of matic course of trea decep.
-Oliver was the victim of a systematic course of treachery and deception.
+Persons OF commonplace IDEAS—unimaginative worthy burghers WHO are satisfied
+with THE daily round OF things and WHO subscribe TO THE popular credo OF
+sentimental values—will always be DOG-lovers. To them nothing will ever be
+more important than themselves and their own more primitive feelings, and
+they will never cease TO esteem and GLORIFY THE fellow-animal WHO best
+typifies these. Such persons are submerged in THE vortex OF Oriental
+idealism and abasement which ruined CLASSIC civilisation in THE Dark Ages,
+and live in A bleak world OF abstract sentimental values wherein THE
+mawkish illusions OF meekness, devotion, gentleness, brotherhood, and
+whining humility are magnified into supreme virtues, and A whole false
+ethic and philosophy erected on THE timid reactions OF THE flexor system
+OF muscles. This HERITAGE, ironically foisted on us when Roman politics
+raised THE faith OF A whipped and broken people TO supremacy in THE later
+empire, has naturally kept A strong hold over THE weak and THE SENTIMENTALLY
+thoughtless; and perhaps reached its culmination in THE insipid nineteenth
+century, when people were wont TO praise DOGS “because they are so human”
+(as if humanity were any valid standard OF merit!), and honest Edwin
+Landseer painted hundreds OF smug Fidoes and Carlos and Rovers with all THE
+ANTHROPOID triviality, pettiness, and “cuteness” OF eminent Victorians.
 
-Now Bumble was at, and a choic;
-Now, Mr. Bumble was a fat man, and a choleric;
 
-Th as no great cons to the ch.
-This was no very great consolation to the child.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+8 - MOVING AROUND
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Move all the way up to the top with  gg  , then come back all the way down with  G  (Shift + g), then do the same with <C-u> and <C-d>.
 
-'P, ir, I ome mo'
-'Please, sir, I want some more.'
 
-'We re o nction tse nture,' sd te old gntlmn
-'We refuse to sanction these indentures,' said the old gentleman
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+X - FINAL TIPS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-ere poston of airs d n all impro.
-Here the position of affairs had not at all improved.
+Delete and enter INSERT MODE at once with  c  (e.g., cl, cw, cc, c$...).
+Replace the character under the cursor with  r<new_character>.
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 1.5: Text editing - appending
-Instructions: complete the lines by filling in the missing word, then the end of the sentence. 
-Commands:
-- A : append at end of line.
-
-"I am afraid, my dear , that most of your conclusions we
-"I am afraid, my dear Watson, that most of your conclusions were erroneous.
-
-I laughed incredulously Sherlock Holmes leaned back in h
-I laughed incredulously as Sherlock Holmes leaned back in his settee
-
-"Mr. Holmes, they w the footprints of a gigantic h
-"Mr. Holmes, they were the footprints of a gigantic hound!"
-
-"Do you mean that wife and you wi
-"Do you mean that your wife and you wish to leave?"
-
-"I heard it distinctly, am sure that it was really the sob o
-"I heard it distinctly, and I am sure that it was really the sob of a woman."
-
-
-Lesson 1.5.extra : Text editing - prepending
-Instructions: complete the lines by filling in the beginning of the sentence.
-Commands :
-- I : insert at beginning of line.
-
-afraid, my dear Watson, that most of your conclusions were erroneous.
-"I am afraid, my dear Watson, that most of your conclusions were erroneous.
-
-Sherlock Holmes leaned back in his settee
-I laughed incredulously as Sherlock Holmes leaned back in his settee
-
-Holmes, they were the footprints of a gigantic hound!"
-"Mr. Holmes, they were the footprints of a gigantic hound!"
-
-your wife and you wish to leave?"
-"Do you mean that your wife and you wish to leave?"
-
-heard it distinctly, and I am sure that it was really the sob of a woman."
-"I heard it distinctly, and I am sure that it was really the sob of a woman."
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 2.1: Deletion commands
-Instructions: delete the words that are out of place.
-Commands:
-- w : move forward 1 word
-- dw : delete 1 word
-- e : move to the end of the word
-- de : delete to the end of the word
-
-The rabbit-hole VIM went straight on like a IS tunnel for some way, and 
-then GOOD dipped suddenly down, IT so suddenly that Alice had not a moment 
-to WILL think MAKE about YOU stopping herself before she found herself falling 
-down a very deep HAPPY well.
-
-Either the well was GIVE very deep, or she fell very ALL slowly, for she 
-had plenty of YOUR time as she went down to look about her MONEY and to 
-wonder TO what was going to happen VIM next. First, she tried to look down 
-and SAVE make out what THE she was coming to, but it was too dark to see 
-anything; CHILDREN then she looked at the sides of the well, IN and noticed 
-that UGANDA they were filled with cupboards STAY and book-shelves; here and 
-there she AWAY saw maps and pictures hung FROM upon pegs. She took down a 
-jar from EMACS one of the shelves as she passed; it was IT labelled 
-'ORANGE MARMALADE', but WILL to her great disappointment it BREAK was empty: 
-she did YOUR not like to drop the jar FINGERS for fear of killing somebody, 
-so AND managed to put it into one of the cupboards THUMBS as she fell past it.
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 2.2: More deletion commands
-Instructions: delete the extraneous characters on the right side of the line. 
-Commands:
-- d$ : delete to the end of the line
-
-The Owl and the Pussycat went to sea[this is a bit that you need to delete]
-In a beautiful pea-green boat,IT WASN'T MADE OF PEAS
-They took some honey, and plenty of money,***Always important to take money***
-Wrapped up in a five pound note. #Or $8.07 USD on 14 Nov 2010
-The Owl looked up to the stars above,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-And sang to a small guitar, /* With only 5 strings */
-"O lovely Pussy! O Pussy, my love,(Owls are known to be very passionate)
-What a beautiful Pussy you are, you are, you are,+++++++++++++
-What a beautiful Pussy you are." {Delete me please, I don't belong here} 
-Pussy said to the Owl "You elegant fowl, http://flic.kr/p/6chRZS 
-How charmingly sweet you sing. @@Funfact - owls have the sweetest birdsong
-O let us be married, too long we have tarried; A little TOO much tarrying
-But what shall we do for a ring?" The eternal question.
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 2.4: Using a count for a motion
-Instructions: Try to move from the point marked 'a' to the point marked 'b' using 
-one command.
-
-       a           b
-e stands for the end of the word.
-
-                        a      b
-w means word, that is, move to the next word.
-
-                        a          b        c           d
-punctation counts as a word, so this comma, and this one, count.
-
-c                    a             b
-use 0 to jump to the first character of the line.
-
-a                                b              c
-Zero One Two Three Four Five Six Seven Eight Nine Ten
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 2.5: Using a count to delete more
-Instructions: delete the uppercase words.
-Commands:
-- d<number>w : delete <number> words
-- Alternatively, use <number>dw to achieve the same effect.
-
-Jack and Jill UP GOT JACK went up AND HOME DID TROT the Hill 
-to fetch AS FAST AS HE COULD a pail of CAPER water
-Jack HE WENT TO BED fell down and AND BOUND HIS HEAD broke his crown
-And WITH VINEGAR Jill came AND BROWN PAPER tumbling after.
-
-Old WHEN SHE GOT THERE Mother Hubbard
-Went THE CUPBOARD to the WAS BARE cupboard
-To SO THE POOR LITTLE DOGGIE get her poor HAD NONE doggie a bone,
-
-Little Bo BUT WHEN SHE AWOKE peep has lost SHE FOUND IT A JOKE her sheep
-And FOR THEY WERE doesn't know ALL STILL FLEETING where to find them.
-Leave THEN UP SHE TOOK them alone and HER LITTLE CROOK they'll come home,
-Bringing DETERMINED FOR their tails TO FIND THEM behind them.
-Little Bo SHE FOUND THEM INDEED peep 
-fell fast BUT IT MADE HER HEART BLEED asleep
-And FOR THEY LEFT dreamt she THEIR TAILS BEHIND THEM heard them bleating,
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 2.6: Operating on lines
-Instructions: delete the lines that don't belong in the text below.
-It's up to you to pick which ones don't belong!
-Commands:
-- dd : delete 1 line
-
-I said a hip hop, hippie to the hippie 
-I wandered lonely as a cloud
-That floats on high o'er vales and hills,
-When all at once I saw a crowd,
-The hip, hip a hop, and you don't stop, a rock it
-To the bang bang boogie, say, up jump the boogie
-A host, of golden daffodils;
-To the rhythm of the boogie, the beat
-Beside the lake, beneath the trees,
-Now, what you hear is not a test, I'm rapping to the beat
-And me, the groove, and my friends are gonna try to move your feet
-Fluttering and dancing in the breeze.
-
--William Wordsworth
--Sugarhill Gang
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 2.7: The undo command
-Instructions: fix the errors below, and practice undoing your corrections.
-Commands:
-- u : undo last change
-- U : undo all recent changes on current line (note that this counts as a change)
-- Ctrl + R : redo 
-
-There    on**ce was a bu()gg$$y AI
-Who d%*ecided ^^^ her su""bject & should d+ie.
-W^hen t{he pl}ot w~as unc#overed,
-The su|b|j|e|cted disc\o/vered
-That s_ad=ly the c&ake w@as @ a l-i-e.	
-
-There SOMEBODY once SET UP was a US man THE from BOMB deep space
-And all MAIN you SCREEN could TURN see ON was his face
-It ALL seemed YOUR that BASE ARE his BELONG gig TO US
-Was YOU HAVE NO CHANCE to TO SURVIVE MAKE make YOUR TIME you move zig
-Or FOR else he GREAT would take JUSTICE all your base
-
-There ~once~ was (a) gal "from" [Peru]
-whose #limericks# {stopped} on %%line%% two.
-
-[Thanks to http://limerickdb.com/]
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 3.1: The put command
-Reorder Langston Hughes using dd and p.
-
-3 Life is a broken-winged bird
-6 For when dreams go
-8 Frozen with snow. 
-5 Hold fast to dreams
-2 For if dreams die
-7 Life is a barren field
-4 That cannot fly.
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 3.2: The replace command
-Use the replace (r) and x commands to sort out these verses.
-
-"For I knot the pants I hang for you,” declares tie Loaf, 
-"For I know the plans I have for you,” declares the Lord, 
-
-“pants so proper your panda got to farm you, 
-“plans to prosper you and not to harm you, 
-
-pants to give yon pope land a suture. 
-plans to give you hope and a future. 
-
-When you wilt all on me and code and play tummy-tickles, 
-Then you will call on me and come and pray to me, 
-
-hand-In well-listed yoyos.
-and I will listen to you.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 3.3: The change operator
-Use the ce command to fix up Thomas Hardy:
-
-IX
-            Alignment they seemed to beguile;
-            Alien they seemed to be;
-
-            No mongolian eyelift could separate
-            No mortal eye could see
-
-The intimate welding of their laden hindquarters,
-The intimate welding of their later history,
-
-X
-            Or suggest that they were beneficial
-            Or sign that they were bent
-
-            Byproducts, parleying couchpotatoes 
-            By paths coincident
-
-Of bigger anatomies towards half of one augmented evening sandwich,
-On being anon twin halves of one august event,
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 3.4: More changes using c
-Take the c command out for a spin with Geoffrey Chaucer:
-
-try ce:
-Love is blimplike.
-Love is blind.
-
-try cfv:
-Be it about curvature, men love newfangledness.
-By nature, men love newfangledness.
-
-try c5w:
-The greatest cannabals have been close with many people.
-The greatest scholars are not usually the wisest people.
-
-try c$:
-Nowhere so busy a man as he than he, as he than he be he than he.
-Nowhere so busy a man as he than he, and yet he seemed busier than he was.
-
-try c3fc:
-People can succeed through a sincere imagination.
-People can die of mere imagination.
-
-go free-style:
-The bored assume all talk is mere intention.
-The guilty think all talk is of themselves.
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 4.1: Cursor location and file status
-Instructions: try out the following commands.
-Commands:
-- Ctrl-g : show location in file
-- G : move to bottom of file
-- gg : move to top of file
-- <number> G : move to a specific line
-
-Memorize the current line number, then move to the beginning of the file.
-Now move to line 200, and come back here.
-Now move to line 100, then to the end of the file, and the back here.
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 4.2: The search command
-/ : search for a phrase
-? : search backwards
-n : go to next match
-N : go to previous match
-Ctrl + o : go back
-Ctrl + i : go forward
-
-Try these commands on the following text.
-
-The domestic cat (Felis silvestris catus or Felis catus) is a small, typically furry, carnivorous mammal. They are often called house cats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids and felines. They are often valued by humans for companionship and for their ability to hunt vermin. There are more than seventy cat breeds recognized by various cat registries.
-
-Cats are similar in anatomy to the other felids, with a strong flexible body, quick reflexes, sharp retractable claws and teeth adapted to killing small prey. Cat senses fit a crepuscular and predatory ecological niche. Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. They can see in near darkness. Like most other mammals, cats have poorer color vision and a better sense of smell than humans. Cats, despite being solitary hunters, are a social species, and cat communication includes the use of a variety of vocalizations (mewing, purring, trilling, hissing, growling and grunting) as well as cat pheromones and types of cat-specific body language.
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 4.3: Matching parentheses search
-Instructions: fix up the following lines/blocks of code.
-Commands:
-- Ctrl + % : go to matching character (e.g., brackets, parentheses...)
-- Hint : you don't need to be on top of the character you wish to match with.
-
-function myst(a, b, c) {
-  return a + b + c;
-}
-function myst(a, b, c, d) {
-  return a + b + c + d;
-}
-
-const bamboozle = x => { y = x + 1; }
-const bamboozle = x => { y = x + 1; return y; }
-
-(+ 1 (* 2 3 4 5) (- (/ 4 2) 2 3))
-(+ 1 (* 2 3 4 5 6) (- (/ 4 2) 2))
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-General tips and tricks
-- Use  .  to repeat the last command
-- Use  Esc  or  Ctrl + [  to leave editing mode 
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lesson 1.1: Moving the cursor
-
-
-YOU MADE IT! 
-
-TO LEVEL UP, GET YOURSELF A COPY OF "PRACTICAL VIM"
