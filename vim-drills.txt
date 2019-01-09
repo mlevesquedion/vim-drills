@@ -242,7 +242,8 @@ ANTHROPOID triviality, pettiness, and “cuteness” OF eminent Victorians.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 8 - MOVING AROUND
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Move all the way up to the top with  gg  , then come back all the way down with  G  (Shift + g), then do the same with <C-u> and <C-d>.
+Move all the way up to the top with  gg  , then come back all the way down
+with  G  (Shift + g), then do the same with <C-u> and <C-d>.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
