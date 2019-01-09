@@ -58,6 +58,7 @@ Remove the uppercased words from the text.
 - w : move one word forward
 - b : move one word backward
 - e : move to the end of a word
+- ge : move to the end of the previous word (i.e., backwards)
 - d<motion> : delete <motion> (e.g. dw = delete word)
 - W : same as w, skipping punctuation (and so on with b and e)
 
