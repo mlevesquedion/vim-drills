@@ -95,6 +95,7 @@ Remove the uppercased characters from the text.
 - f<character> : jump to the next occurrence of <character>
 - F<character> : jump to the previous occurrence of <character>
 - Use what you learned in the previous lesson it the opportunity arises
+- Use  ;  to repeat a search made with   f  or  F  .
 
 BetwEEn dOgs and cAts my degree of chOiCe is SO grEAT thAT It would nEvEr
 oCcur tO mE tO coMparE the twO. I hAve no actIve dIsliKe FOR dogs, anY morE
@@ -140,9 +141,9 @@ worpers o th ul .
 Delete the uppercased lines.
 
 - dd : delete an entire line
+- p : paste the last thing deleted or copied (be it a line, word, or other)
 - cc : delete a line and enter insert mode
 - yy : "yank" (copy) an entire line
-- p : paste the last thing deleted or copied (be it a line, word, or other)
 
 NATURALLY, ONE’S PREFERENCE IN THE MATTER OF CATS AND DOGS DEPENDS WHOLLY
 upon one’s temperament and point of view. The dog would appear to me to be
